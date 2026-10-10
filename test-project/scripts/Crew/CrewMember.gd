@@ -1,6 +1,11 @@
 extends Node
 
 var current_task = null
+
+var ID;
+	
+func _set_ID_number(id: int):
+	ID = id;
 	
 func _process(delta: float) -> void:
 	if current_task == null:

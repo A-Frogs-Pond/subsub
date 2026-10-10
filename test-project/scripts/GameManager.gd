@@ -9,9 +9,13 @@ func _ready() -> void:
 	crew_manager._request_hull_repair()
 	#crew_manager._request_research()
 	#research_system._start_researching()
+	
+	print("B for Breach Task")
+	print("R for Repair Task")
+	print("L for Leak Task")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Menu"):
 		_show_menu()

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bo1s1605ldifi"]
+
+[ext_resource type="Script" uid="uid://coe0rmsl1xvfk" path="res://scripts/SubMain.gd" id="1_7qy3x"]
+[ext_resource type="PackedScene" uid="uid://cbjr3iwi5a848" path="res://scenes/SubSystems.tscn" id="1_7txh0"]
+[ext_resource type="PackedScene" uid="uid://ke867a7yjet0" path="res://scenes/SubWorld.tscn" id="2_7qy3x"]
+
+[node name="SubMain" type="Node2D" unique_id=737568114]
+script = ExtResource("1_7qy3x")
+
+[node name="SubSystems" parent="." unique_id=1917788945 instance=ExtResource("1_7txh0")]
+position = Vector2(423, 207)
+
+[node name="SubWorld" parent="." unique_id=537380673 instance=ExtResource("2_7qy3x")]
+position = Vector2(652, 291)

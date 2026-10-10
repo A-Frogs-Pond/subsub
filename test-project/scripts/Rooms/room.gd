@@ -1,7 +1,7 @@
 extends Node
 
 @onready var pipe_leak_task_pos = get_node("../PipeLeakTaskPos")
-@onready var player_temp = get_node("../Player")
+@onready var player_temp = get_node("../CrewMember_1")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

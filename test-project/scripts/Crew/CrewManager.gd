@@ -2,15 +2,21 @@ extends Node
 
 var crew_members = []
 
+var curr_id = 1
+
 @onready var hull_system = get_node("../HullSystem")
 
 func _ready() -> void:
 	crew_members = get_children()
-
-
-func _process(delta: float) -> void:
-	pass
 	
+	for crew_member in crew_members:
+		crew_member._set_ID_number(curr_id)
+		curr_id += 1
+
+
+	
+func _get_crew_list():
+	return crew_members
 	
 func _request_crew_member():
 	for crew_member in crew_members:
